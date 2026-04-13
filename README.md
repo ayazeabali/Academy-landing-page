@@ -1,25 +1,24 @@
 # Task 2 - Academy Landing Page
 
 ##  Overview
-This project is an Academy Landing Page built using React + Vite with TypeScript (TSX). The application follows a clean and scalable component-based architecture as covered in previous lessons.
+This project is an Academy Landing Page built using React + Vite with TypeScript (TSX). The website follows a clean and scalable component-based architecture.
 
 ---
 
 ##  Technologies Used
 - React (TSX)
 - Vite
-- CSS (No external libraries)
+- CSS 
 - Responsive Design
 
 ---
 
 ##  Requirements Implemented
--  Build the Academy Landing Page based on the provided design
+-  Build the Academy Landing Page    
 -  Fully responsive across:
   - Mobile screens
   - Tablet screens
   - Desktop screens
--  Use only CSS (no external libraries)
 -  Proper component-based architecture
 -  Use props to pass data between components
 -  Built using TypeScript (TSX)
@@ -60,6 +59,5 @@ To run the project locally:
 npm install
 npm run dev
 
-## Build
-npm run build
+
 
