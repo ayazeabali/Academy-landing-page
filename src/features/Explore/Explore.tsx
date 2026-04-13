@@ -17,12 +17,22 @@ export const Explore = () => {
           <div key={card.id} className={styles.card}>
             <h3 className={styles.cardTitle}>{card.title}</h3>
             
-            <div className={styles.decoration}>
-              <div className={styles.line}></div>
-              <div className={styles.dots}>
-                <span></span><span></span><span></span>
+            {/* التعديل المطابق للفيغما: دوائر أطراف وخطوط مقطعة */}
+            <div className={styles.timelineContainer}>
+              {/* الدائرة الملونة في البداية */}
+              <div className={styles.stepColored}></div>
+              
+              {/* مجموعة القطع المستقيمة المقطعة */}
+              <div className={styles.segmentedLine}>
+                <div className={styles.lineSegment}></div>
+                <div className={styles.lineSegment}></div>
+                <div className={styles.lineSegment}></div>
+                <div className={styles.lineSegment}></div>
+                <div className={styles.lineSegment}></div>
               </div>
-              <div className={styles.line}></div>
+              
+              {/* الدائرة البيضاء في النهاية */}
+              <div className={styles.step}></div>
             </div>
 
             <p className={styles.cardDescription}>{card.description}</p>

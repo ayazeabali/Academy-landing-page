@@ -7,6 +7,8 @@
   flex-direction: column;
   gap: 50px;
   box-sizing: border-box;
+  /* منع السكرول العرضي نهائياً على مستوى الصفحة */
+  overflow-x: hidden; 
 }
 
 .subContainer {
@@ -59,6 +61,10 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  /* منع السكرول داخل الكارد */
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 .cardTitle {
@@ -68,19 +74,57 @@
   color: #1A1A1A;
 }
 
-.decoration {
+/* --- الحل الجذري لمشكلة السكرول والشادو المطابق للفيجما --- */
+.timelineContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: 100%;
   justify-content: center;
+  width: 100%;
+  max-width: 613px; /* العرض الأقصى حسب فيجما */
+  margin: 15px 0;
+  box-sizing: border-box;
+  /* الحل السحري: منع العناصر من التمدد خارج الأب */
+  min-width: 0; 
 }
 
-.line {
-  height: 2px;
-  background: var(--color-text-dark);
-  flex-grow: 1;
+.stepColored {
+  width: 20px;
+  height: 20px;
+  background: #FFBE99; /* لون فيجما */
+  border: 2px solid #262626;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
+
+.step {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 2px solid #262626;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.segmentedLine {
+  display: flex;
+  flex: 1; /* جعل المساحة مرنة بالكامل */
+  gap: 8px; /* التقطيع حسب فيجما */
+  align-items: center;
+  margin: 0 10px;
+  min-width: 0; /* منع تجاوز عرض الكارد */
+}
+
+.lineSegment {
+  height: 4px; 
+  background-color: #FFBE99; /* اللون الملون */
+  flex: 1; /* كل قطعة تأخذ مساحة متساوية من العرض المتاح */
+  border-radius: 2px;
+  border: 1.5px solid #262626;
+  /* التوهج البرتقالي المطلوب */
+  box-shadow: 0 0 6px rgba(255, 190, 153, 0.5);
+  min-width: 0; /* ضمان عدم دفع الحاوية للخارج */
+}
+/* --- نهاية التعديل --- */
 
 .cardDescription {
   font-family: 'Outfit', sans-serif;
@@ -105,5 +149,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+}
+
+/* تعديل حساس جداً للموبايل لإلغاء السكرول نهائياً */
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px; /* تقليل البادينج الجانبي */
+  }
+  .timelineContainer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .segmentedLine {
+    gap: 4px; /* تقليل الفجوات بين الخطوط لتوفير مساحة */
   }
 }
