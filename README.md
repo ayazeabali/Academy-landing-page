@@ -27,10 +27,10 @@ This project is an Academy Landing Page built using React + Vite with TypeScript
 ---
 
 ##  Features
-- 🔹 Responsive Navbar with toggle menu for small screens
-- 🔹 Slider in the **Our Testimonials** section
-- 🔹 Accordion in the **Frequently Asked Questions** section
-- 🔹 Pixel-perfect design implementation
+-  Responsive Navbar with toggle menu for small screens
+-  Slider in the **Our Testimonials** section
+-  Accordion in the **Frequently Asked Questions** section
+-  Pixel-perfect design implementation
 
 ---
 
