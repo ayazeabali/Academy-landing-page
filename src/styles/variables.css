@@ -1,0 +1,38 @@
+:root {
+  --color-primary-orange: #FFDECC;
+  --color-white: #FFFFFF;
+  --color-text-dark: #262626;
+  --color-text-muted: #595959;
+  --color-border: #F1F1F3;
+
+  --faq-bg-closed: #FFEFE5;
+  --faq-bg-open: #FFFFFF;
+  --faq-badge-bg: #FFFFFF;
+  --faq-icon-bg: #FFF5F0;
+  --faq-border-dark: #262626;
+  --faq-text-main: #1A1A1A;
+  --faq-text-body: #333333;
+
+  --header-padding-top: 40px;
+  --header-gap: 14px;
+  --container-side-padding: 17px;
+
+  --faq-padding-open: 30px 24px;
+  --faq-padding-closed: 20px 24px;
+  --faq-item-gap: 20px;
+  --faq-border-radius: 10px;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --max-width-desktop: 1200px;
+  
+  --header-bg: #FFFFFF;
+  --top-banner-bg: #FFDECC;
+  --logo-bg: #FF8D4D;
+  --menu-btn-bg: #FFEFE5;
+  --border-black: #262626;
+
+  --header-padding-top: 40px;
+  --header-left-offset: 17px;
+
+}

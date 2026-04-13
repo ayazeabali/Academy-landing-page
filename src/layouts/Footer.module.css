@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+  background-color: var(--white-color, #ffffff);
+  border-top: 1px solid var(--grey-15, #eee);
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-x: hidden; 
+  position: relative;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.leftBrandSide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.linkList {
+  list-style: none !important; 
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-width: 100%; 
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.bottomBar {
+  width: 100%;
+  max-width: 100%;
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  width: 100%; 
+}
+
+.socialButtonsContainer {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.socialButton {
+  background-color: #FFF5F0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #F1E1D9;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  width: 100%;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* --- تعديلات الشاشات الكبيرة (Desktop) - لم يتم تغييرها --- */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 80px 100px 40px;
+  }
+
+  .topContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .leftBrandSide {
+    flex: 0 1 400px;
+  }
+
+  .linksGrid {
+    grid-template-columns: repeat(4, 1fr);
+    flex: 1;
+    justify-items: end;
+  }
+
+  .bottomContent {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+}
+
+/* تحسينات إضافية للموبايل الصغير جداً */
+@media (max-width: 600px) {
+  .divider {
+    display: none;
+  }
+  
+  .legalLinks {
+    font-size: 12px;
+    gap: 8px;
+  }
+}

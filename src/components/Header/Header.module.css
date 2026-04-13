@@ -1,0 +1,148 @@
+
+.headerContainer {
+  width: 100%;
+  max-width: 357px; 
+  margin-left: var(--header-left-offset);
+  padding-top: var(--header-padding-top);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.topBanner {
+  position: relative;
+  width: 357px;
+  height: 45px;
+  background-color: var(--top-banner-bg);
+  border: 2px solid var(--border-black);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bannerContent {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--border-black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.navbar {
+  width: 357px;
+  height: 62px;
+  background-color: var(--header-bg);
+  border: 2px solid var(--border-black);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.logoContainer {
+  height: 100%;
+  background-color: var(--logo-bg);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: 2px solid var(--border-black);
+}
+
+.logoText {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--border-black);
+}
+
+.menuBtn {
+  height: 100%;
+  width: 88px;
+  background-color: var(--menu-btn-bg);
+  border: none;
+  border-left: 2px solid var(--border-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburgerIcon span {
+  width: 28px;
+  height: 3px;
+  background-color: var(--border-black);
+  border-radius: 2px;
+}
+
+.abstractLeft, .abstractRight {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--border-black);
+  opacity: 0.5;
+}
+
+.abstractLeft { left: -9px; top: -2px; transform: rotate(90deg); }
+.abstractRight { right: 325px; top: 24px; opacity: 0.9; }
+
+
+.navButtonsContainer {
+  display: none; 
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .headerContainer {
+    max-width: 1819px; 
+    margin: 16px auto; 
+    padding: 0 20px;
+    margin-left: auto; 
+  }
+
+  .topBanner {
+    width: 100%;
+    height: 48px; 
+  }
+
+  .navbar {
+    width: 100%;
+    height: 90px; 
+  }
+
+  .navButtonsContainer {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .menuBtn {
+    display: none; 
+  }
+}
+
+@media (max-width: 1023px) {
+  .activeMenu {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+    border-top: 2px solid var(--border-black);
+  }
+}

@@ -1,0 +1,68 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: 2px solid var(--color-text-dark);
+  width: auto;
+}
+
+.primary {
+  background-color: var(--color-primary-orange); 
+  color: var(--color-text-dark);
+}
+
+.primary:hover {
+  filter: brightness(0.95);
+  box-shadow: 2px 2px 0px var(--color-text-dark);
+}
+
+.outline {
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+}
+
+.btn span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+.nav {
+  height: 100%;
+  padding: 0 30px;
+  border: none;
+  border-right: 2px solid var(--color-text-dark);
+  border-radius: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease; 
+}
+
+.nav:hover {
+  background-color: #FFEFE5; 
+}
+
+.active {
+  height: 100%;
+  padding: 0 30px;
+  border: none;
+  border-right: 2px solid var(--color-text-dark);
+  border-radius: 0;
+  background-color: #FFEFE5; 
+  color: var(--color-text-dark);
+}
+
+.nav:active {
+  background-color: #FFDCC3; /* لون أغمق قليلاً لحظة الضغط */
+}
+
+.nav:first-child, .active:first-child {
+  border-left: none;
+}

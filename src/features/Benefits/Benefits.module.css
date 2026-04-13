@@ -1,0 +1,108 @@
+.container {
+  /* استخدام الفاريبلز للمساحات */
+  width: 100%;
+  max-width: 358px; /* الموبايل كأولوية */
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-50, 50px);
+}
+
+.subContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10, 10px);
+}
+
+/* --- حاوية الكاردات (هنا يكمن الحل) --- */
+.itemsContainer {
+  display: flex;
+  flex-direction: column; /* موبايل */
+  gap: var(--gap-50, 50px);
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  background: var(--color-white, #FFFFFF);
+  border: 2px solid var(--color-border, #262626);
+  border-radius: 12px;
+  box-shadow: var(--shadow-small, 4px 4px 0px 1px #1E1E1E);
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  box-sizing: border-box;
+  transition: var(--transition-smooth, all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+}
+
+.card:hover {
+  background-color: var(--color-primary-light, #FFEFE5);
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-large, 8px 8px 0px 2px #1E1E1E);
+}
+
+/* --- Responsive: اللابتوب (يظهر 3 كاردات بجانب بعض) --- */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px; /* حسب صورة الفيجما للابتوب */
+    padding: 0 80px;
+    gap: 80px;
+  }
+
+  .itemsContainer {
+    display: grid; /* تفعيل الشبكة */
+    grid-template-columns: repeat(3, 1fr); /* 3 كاردات في الصف الواحد */
+    gap: 40px; /* المسافة بين الكاردات */
+  }
+
+  .card {
+    min-height: 271px;
+  }
+}
+
+/* --- Responsive: الديسكتوب الكبير (1592px) --- */
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1592px; /* حسب صورة الفيجما للديسكتوب */
+    padding: 0 162px;
+    gap: 100px;
+  }
+
+  .itemsContainer {
+    grid-template-columns: repeat(3, 1fr); /* الحفاظ على 3 كاردات */
+    gap: 50px;
+  }
+
+  .card {
+    min-height: 341px;
+    box-shadow: var(--shadow-desktop, 6px 6px 0px 2px #1E1E1E);
+  }
+}
+
+/* --- الأيقونة وتنسيقها --- */
+.iconContainer {
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent-peach, #FFDECC);
+  border: 2px solid var(--color-border, #262626);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -28px;
+  left: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  max-width: var(--max-width-desktop);
+  margin: 0 auto;
+  padding: 80px var(--container-side-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.badge {
+  background: var(--color-white);
+  border: 2px solid var(--color-text-dark);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+}
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 130%;
+  color: #1A1A1A;
+}
+
+.paragraph {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-muted);
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.card {
+  background: var(--color-white);
+  border: 2px solid var(--color-text-dark);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 4px 4px 0px 1px #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardTitle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1A1A1A;
+}
+
+.decoration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.line {
+  height: 2px;
+  background: var(--color-text-dark);
+  flex-grow: 1;
+}
+
+.cardDescription {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4C4C4D;
+}
+
+.cardBtn {
+  width: 100%;
+  background-color: var(--color-primary-orange) !important;
+  border: 2px solid var(--color-text-dark) !important;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  height: 56px;
+  transition: var(--transition-smooth);
+}
+
+@media (min-width: 1024px) {
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
