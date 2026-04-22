@@ -60,7 +60,7 @@
 }
 
 .nav:active {
-  background-color: #FFDCC3; /* لون أغمق قليلاً لحظة الضغط */
+  background-color: #FFDCC3; 
 }
 
 .nav:first-child, .active:first-child {

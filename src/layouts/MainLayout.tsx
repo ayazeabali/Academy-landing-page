@@ -1,15 +1,15 @@
-import React from 'react';
-import { Footer } from './Footer';
+import { Outlet } from "react-router-dom";
+import { Header } from "../layouts/Header/Header";
+import { Footer } from "../layouts/footer/Footer";
 
-interface MainLayoutProps {
-  children: React.ReactNode;
-}
-
-export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+export const MainLayout = () => {
   return (
-    <div className="layout-container">
-      <main>{children}</main>
-      <Footer /> 
-    </div>
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 };

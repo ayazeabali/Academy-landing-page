@@ -1,0 +1,127 @@
+.section {
+  width: 1596px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  text-align: center;
+}
+
+.badge {
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-weight: 500;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+  width: 1596px;
+}
+
+.card {
+  position: relative; 
+  width: 505.33px;
+  height: 437px;
+  padding: 80px 50px 50px 50px; 
+  background: #FFFFFF;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px 2px #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  box-sizing: border-box;
+  margin-top: 37px; 
+}
+
+.iconContainer {
+  position: absolute;
+  top: -37px;
+  left: 50px;
+  width: 74px;
+  height: 74px;
+  background: #FFDECC;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+}
+
+.cardTitle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.cardDesc {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4C4C4C;
+  margin: 0;
+}
+
+.footer {
+  width: 1596px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moreAwards {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1A1A1A;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navBtn {
+  width: 58px;
+  height: 58px;
+  background: #FFFFFF;
+  border: 2px solid #262626;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navIcon {
+  width: 30px;
+  height: 30px;
+}

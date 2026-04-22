@@ -13,26 +13,17 @@
   --faq-text-main: #1A1A1A;
   --faq-text-body: #333333;
 
-  --header-padding-top: 40px;
-  --header-gap: 14px;
-  --container-side-padding: 17px;
+  --container-inline-padding: clamp(16px, 5vw, 50px);
+  --section-spacing: clamp(60px, 10vw, 120px);
+  
+  --font-size-h2: clamp(32px, 5vw, 58px);
+  --font-size-h3: clamp(24px, 4vw, 40px);
+  --font-size-body: clamp(16px, 2vw, 20px);
 
-  --faq-padding-open: 30px 24px;
-  --faq-padding-closed: 20px 24px;
-  --faq-item-gap: 20px;
-  --faq-border-radius: 10px;
+  --border-width: 2px;
+  --main-border: var(--border-width) solid var(--color-text-dark);
+  --neubrutalism-shadow: 6px 6px 0px 0px var(--color-text-dark);
 
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  --max-width-desktop: 1200px;
-  
-  --header-bg: #FFFFFF;
-  --top-banner-bg: #FFDECC;
-  --logo-bg: #FF8D4D;
-  --menu-btn-bg: #FFEFE5;
-  --border-black: #262626;
-
-  --header-padding-top: 40px;
-  --header-left-offset: 17px;
-
+  --max-width-desktop: 1596px; 
 }

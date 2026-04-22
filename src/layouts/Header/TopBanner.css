@@ -1,0 +1,34 @@
+.bannerContainer {
+  background-color: #FFDECC; 
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #262626;
+  border-radius: 8px;
+}
+
+.leftIcon {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+.rightIcon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.bannerContent {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #262626;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
